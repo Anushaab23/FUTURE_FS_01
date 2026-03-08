@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Full Stack Developer</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;500&family=Space+Mono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="c-trail"></div>
+  <div id="c-dot"></div>
+  <nav>
+    <a href="#home" class="nav-logo">
+      <div class="logo-dot"></div>ANUSHA AB
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="ham" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+  <div class="mob-nav" id="mob">
+    <a href="#home" onclick="closeNav()">Home</a>
+    <a href="#about" onclick="closeNav()">About</a>
+    <a href="#works" onclick="closeNav()">Works</a>
+    <a href="#contact" onclick="closeNav()">Contact</a>
+  </div>
+
+  <section id="home">
+    <div class="grid-bg"></div>
+    <div class="orb o1"></div>
+    <div class="orb o2"></div>
+    <div class="orb o3"></div>
+    <div class="hero-inner">
+      <h1 class="hero-title"><span class="ho">PORT</span><span class="hf">FOLIO</span></h1>
+      <p class="hero-sub">Full Stack Developer</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="sec-tag rev"><span class="sec-n">02</span> &nbsp;— About Me</p>
+    <div class="about-grid">
+      <div class="photo-wrap rev">
+        <div class="cor tl"></div>
+        <div class="cor tr"></div>
+        <div class="cor bl"></div>
+        <div class="cor br"></div>
+        <div class="pzone" onclick="document.getElementById('ph-file').click()">
+          <img id="ph-img" src="profile.jpg" alt="Profile Photo" class="on">
+          <div id="ph-ph" style="display: none;">
+            <div class="pi-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.28)"
+                stroke-width="1.5">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+            </div>
+            <p class="pi-txt">Click to upload<br>your photo</p>
+          </div>
+          <div class="pi-ov">Change Photo</div>
+        </div>
+      </div>
+      <input type="file" id="ph-file" accept="image/*">
+      <div>
+        <h2 class="aname rev">ANUSHA AB</h2>
+        <p class="arole rev d1">Full Stack Developer</p>
+        <p class="abio rev d2">I'm a passionate developer currently studying Computer Science, building web apps from
+          scratch — clean frontends, solid backends, everything in between.<br><br>Always learning, always shipping. I
+          enjoy turning ideas into real working products.</p>
+        <p class="slbl">Tech Stack</p>
+        <div class="skills rev d3">
+          <span class="sk">HTML</span><span class="sk">CSS</span><span class="sk">JavaScript</span>
+          <span class="sk">PHP</span><span class="sk">MySQL</span><span class="sk">React</span>
+          <span class="sk">Node.js</span><span class="sk">Python</span><span class="sk">Git</span><span
+            class="sk">Docker</span>
+        </div>
+        <p class="slbl">Education</p>
+        <div class="edu-list rev d4">
+          <div class="edu-row">
+            <span class="edu-yr">2023 – 2027</span>
+            <div>
+              <p class="edu-deg">Bachelor's Degree</p>
+              <p class="edu-sub">Currently Studying · Computer Science</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="works">
+    <div class="works-hd">
+      <p class="sec-tag rev"><span class="sec-n">03</span> &nbsp;— Works</p>
+      <h2 class="wtitle rev">MY<span class="wgrad">WORKS</span></h2>
+    </div>
+    <div class="pgrid">
+      <div class="pcard rev">
+        <div class="part">
+          <img src="project1.jpg" alt="Travel Planner Preview" class="pimg">
+          <div class="palines"></div>
+        </div>
+        <p class="pnum">01 / 03</p>
+        <h3 class="ptitle">Travel Planner</h3>
+        <p class="pdesc">A web app to plan and organize trips, browse destinations, and manage itineraries seamlessly.
+        </p>
+        <div class="ptags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">MySQL</span>
+        </div>
+      </div>
+      <div class="pcard rev d1">
+        <div class="part">
+          <img src="project2.jpg" alt="Student Grade Tracker Preview" class="pimg">
+          <div class="palines"></div>
+        </div>
+        <p class="pnum">02 / 03</p>
+        <h3 class="ptitle">Student Grade Tracker</h3>
+        <p class="pdesc">A dashboard for students to log subjects, track grades, and visualize academic progress.</p>
+        <div class="ptags"><span class="ptag">PHP</span><span class="ptag">MySQL</span><span
+            class="ptag">JavaScript</span></div>
+      </div>
+      <div class="pcard rev d2">
+        <div class="part">
+          <img src="project3.jpg" alt="Portfolio Website Preview" class="pimg">
+          <div class="palines"></div>
+        </div>
+        <p class="pnum">03 / 03</p>
+        <h3 class="ptitle">Portfolio Website</h3>
+        <p class="pdesc">A personal portfolio built with pure HTML, CSS and JS — fully responsive with a modern dark
+          aesthetic.</p>
+        <div class="ptags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span
+            class="ptag">JavaScript</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <p class="sec-tag rev"><span class="sec-n">04</span> &nbsp;— Get In Touch</p>
+    <div class="cgrid">
+      <div>
+        <h2 class="cbig rev">LET'S<br>BUILD<br><em>TOGETHER</em></h2>
+        <p class="csub rev d1">Open to projects, collaborations, and opportunities. If you're building something great,
+          let's talk.</p>
+        <div class="clist rev d2">
+          <a href="mailto:anushaab97@gmail.com" class="ci">
+            <div class="ci-ic"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg></div>
+            <div>
+              <p class="ci-l">Email</p>
+              <p class="ci-v">anushaab97@gmail.com</p>
+            </div>
+          </a>
+          <a href="tel:+1234567890" class="ci">
+            <div class="ci-ic"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.14 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.05 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z" />
+              </svg></div>
+            <div>
+              <p class="ci-l">Phone</p>
+              <p class="ci-v">+1 (234) 567-890</p>
+            </div>
+          </a>
+          <div class="ci">
+            <div class="ci-ic"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg></div>
+            <div>
+              <p class="ci-l">Location</p>
+              <p class="ci-v">karnataka, India</p>
+            </div>
+          </div>
+        </div>
+        <div class="socrow rev d3">
+          <a href="#" class="s-btn">GitHub</a>
+          <a href="#" class="s-btn">LinkedIn</a>
+          <a href="#" class="s-btn">Twitter</a>
+        </div>
+      </div>
+      <form class="cform rev" onsubmit="sendForm(event)">
+        <div class="frow">
+          <div class="fg"><label>Full Name</label><input type="text" name="name" placeholder="John Doe" required></div>
+          <div class="fg"><label>Email</label><input type="email" name="email" placeholder="john@email.com" required>
+          </div>
+        </div>
+        <div class="fg"><label>Subject</label><input type="text" name="subject" placeholder="Project / Collaboration">
+        </div>
+        <div class="fg"><label>Message</label><textarea name="message" placeholder="Tell me about your idea..."
+            required></textarea></div>
+        <button type="submit" class="fsend">Send Message &nbsp;&#x2192;</button>
+        <p class="fok" id="fok">&#x2713; Message sent!</p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&#169; 2024 <span class="fg-t">ANUSHA AB</span>. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
